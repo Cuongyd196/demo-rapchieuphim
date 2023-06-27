@@ -5,10 +5,9 @@ function hienThiDanhSachPhimWeb() {
   danhSachPhim.forEach((phim) => {
     const phimCard = document.createElement('div');
     phimCard.classList.add('phim-card');
-    phimCard.classList.add('col-3');
-
     const hinhAnh = document.createElement('img');
     hinhAnh.src = phim.hinhAnh;
+    hinhAnh.style.width = '100%';
     phimCard.appendChild(hinhAnh);
 
     const tenPhim = document.createElement('h3');
