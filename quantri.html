@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trang quản lý Phims</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Phims</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./quantri.html">Trang quản lý phim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./nguoidung.html">Trang người dùng</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <center>
+    <h3> TRANG QUẢN LÝ</h3>
+  </center>
+  <br>
+
+  <div class="container">
+    <!-- <button id="themButton"  class="btn btn-primary">Thêm mới</button> -->
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+
+        <form id="formPhim" class="mb-3">
+          <div class="row">
+
+            <div class="mb-3 col-6">
+              <label for="tenPhim" class="form-label">Tên phim:</label>
+              <input type="text" id="tenPhim" class="form-control" required>
+            </div>
+            <div class="mb-3 col-3">
+              <label for="soLuongVe" class="form-label">Số lượng vé:</label>
+              <input type="number" id="soLuongVe" class="form-control" required>
+            </div>
+            <div class="mb-3 col-3">
+              <label for="ngayChieu" class="form-label">Ngày chiếu:</label>
+              <input type="date" id="ngayChieu" class="form-control" required>
+            </div>
+
+          </div>
+          <div class="row">
+
+            <div class="mb-3 col-6">
+              <label for="hinhAnh" class="form-label">Url hình ảnh phim:</label>
+              <input type="text" id="hinhAnh" class="form-control" required>
+            </div>
+            <div class="mb-3 col-6">
+              <label for="rapChieu" class="form-label">Rạp chiếu:</label>
+              <input type="text" id="rapChieu" class="form-control" required>
+            </div>
+          </div>
+          <div>
+            <button type="submit" id="themButton" class="btn btn-primary">Lưu dữ liệu</button>
+            <button type="button" id="huyButton" class="btn btn-secondary">Hủy</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-sm-12 col-md-12">
+        <br>
+        <table id="tablePhim" class="table table-bordered">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên Phim</th>
+              <th>Rạp Chiếu</th>
+              <th>Ngày chiếu</th>
+              <th>Số lượng vé</th>
+              <th>Hình ảnh phim</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Nội dung sẽ được thêm bằng JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./js/dataPhim.js"></script>
+  <script src="./js/quantri.js"></script>
+</body>
+
+</html>

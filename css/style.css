@@ -1,0 +1,36 @@
+.phim-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.phim-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.phim-card h3 {
+    margin-bottom: 5px;
+}
+
+.phim-card p {
+    margin-bottom: 10px;
+}
+
+.phim-card button {
+    display: block;
+    width: 100%;
+}
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(162, 204, 255);
+    color: black;
+    text-align: center;
+}
