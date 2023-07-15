@@ -29,9 +29,10 @@ function hienThiDanhSachPhimWeb() {
     const xemButton = document.createElement('button');
     xemButton.textContent = 'Xem chi tiết';
     xemButton.classList.add('btn', 'btn-primary');
-    xemButton.addEventListener('click', () => {
-      hienThiPhimLenForm(phim);
-    });
+    xemButton.onclick = () => {
+      window.location.href = 'chitiet.html?id=' + phim.id;
+
+    };
     phimCard.appendChild(xemButton);
     danhSachPhimDiv.appendChild(phimCard);
   });
