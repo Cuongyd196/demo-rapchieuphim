@@ -16,6 +16,7 @@ demo-rapchieuphim
     ├── quantri.js            # File js chứa các hàm xử lý của trang quantri.html
 ├── index.html         # File html trang người dùng
 ├── quantri.html       # File html trang quản trị
+├── chitiet.html       # File html trang chi tiết
 ├── README.md          # File README
 ```
 
